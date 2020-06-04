@@ -2,6 +2,10 @@
 
 // 头部广告页-----------------------------------
 $adheight: 40px;
+.wrapbox {
+  overflow-x: hidden;
+}
+
 .topad {
   background: #ffd744;
   width: 100%;
@@ -23,6 +27,7 @@ $adheight: 40px;
 header {
   width: 100%;
   height: 39px;
+  margin: 0 auto;
   .nav {
     margin: 0 auto;
     // logo
@@ -155,7 +160,7 @@ header {
   width: 100%;
   height: 60px;
   background: #e4e0e0;
-
+  margin: 0 auto;
   //导航左边内容
   .nav-main-left {
     height: 55px;
@@ -217,7 +222,7 @@ header {
   .nav-main-right {
     float: left;
     height: 55px;
-    width: 390px;
+    width: 368px;
     background: palegreen;
     .nav-tools {
       padding: 6px 7px 0 40px;
@@ -304,6 +309,442 @@ header {
   }
 }
 
-
 //菜单轮播图----------------------------------------------
+.bannerwrap {
+  width: 100%;
+  height: 311px;
+  margin: 0 auto;
+  background: blueviolet;
+  .menuwrap {
+    //菜单
+    .menu {
+      position: relative;
+      z-index: 3;
+      margin-left: 15px;
+      float: left;
+      ul {
+        padding: 14px 0 8px 0;
+        background-color: #fefefe;
+        color: #636363;
 
+        width: 175px;
+        border-radius: 3px 3px 3px 3px;
+        border: 1px solid #bbb;
+        li {
+          height: 25px;
+          line-height: 25px;
+          // padding-left: 18px;
+          padding: 0 8px 5px 0;
+          margin: 0 10px 0 14px;
+          background-image: url(data:image/gif;base64,R0lGODlhBwAKAMIEAObm5uvr6/Dw8P39/f///////////////yH5BAEKAAcALAAAAAAHAAoAAAMWSDPUGoE5AaIj1M4qMW+ZFDYD1ClnAgA7);
+          background-position: right center;
+          background-repeat: no-repeat;
+          a {
+            font-size: 13px;
+            color: #333;
+            font-family: inherit;
+            font-weight: 400;
+            line-height: 16px;
+          }
+          span {
+            padding: 0 2px;
+            font-size: 12px;
+          }
+        }
+        .lastlist {
+          padding: 10px 8px 0 0;
+          margin-bottom: 8px;
+          background-image: none;
+          span {
+            font-size: 13px;
+            color: #666;
+            font-weight: 400;
+            font-family: inherit;
+            line-height: 16px;
+          }
+        }
+        //全部商品分类上面的线
+        .nav-divider {
+          margin: 5px 11px 0 14px;
+          line-height: 1px;
+          height: 1px;
+          background: #eee;
+          font-size: 13px;
+          display: block;
+        }
+      }
+
+      //点击显示的列表页
+      .menulist {
+        position: absolute;
+        left: 191px;
+        top: 0;
+        width: 998px;
+        min-height: 468px;
+        border: 1px solid #f7f7f7;
+        background-color: #fff;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
+        display: none;
+        transition: top 0.3s ease;
+        .item {
+          padding: 20px;
+          display: none;
+        }
+      }
+    }
+
+    //banner页
+    .banner {
+      float: left;
+
+      .lunbo {
+        position: relative;
+        width: 1325px;
+        height: 300px;
+        ul {
+          li {
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0;
+            img {
+              width: 100%;
+              height: 300px;
+            }
+          }
+        }
+
+        //轮播图浮出框
+        ol {
+          position: absolute;
+          display: flex;
+          width: 1325px;
+          top: 250px;
+          li {
+            width: 25%;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding-top: 7px;
+            line-height: 19px;
+
+            a {
+              display: block;
+              text-align: center;
+              font-weight: bold;
+              font-size: 13px;
+              color: #fff;
+              text-decoration: none;
+              span {
+                display: block;
+              }
+            }
+          }
+          li:hover {
+            background: orange;
+          }
+        }
+
+        //左右箭头
+        .left {
+          position: absolute;
+          top: 110px;
+          display: block;
+          width: 60px;
+          height: 80px;
+          background: url("https://images-cn.ssl-images-amazon.com/images/G/28/gwfloor/static/images/arrow-l._CB485934527_.png");
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        .right {
+          position: absolute;
+          top: 110px;
+          right: 0;
+          display: block;
+          width: 60px;
+          height: 80px;
+          background: url("https://images-cn.ssl-images-amazon.com/images/G/28/gwfloor/static/images/arrow-r._CB485936151_.png");
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+}
+
+//主体内容展示--------------------------------------------------------
+section {
+  position: relative;
+  height: 2300px;
+  .mainwrap {
+    width: 1200px;
+    height: 2200px;
+    background: palegreen;
+
+    // 主体内容左边第一块
+    .mainleft {
+      width: 1000px;
+      height: 230px;
+      background: #fff;
+      float: left;
+      // border: 1px solid #000;
+
+      // 1
+      .mainleft1 {
+        position: relative;
+
+        a {
+          text-decoration: none;
+          display: block;
+          float: left;
+
+          // 1.1
+          .mainleft1-list1 {
+            cursor: pointer;
+            width: 350px;
+            p {
+              margin: 10px 0 0 45px;
+
+              span {
+                font-family: "Microsoft Yahei";
+                font-weight: 700;
+                font-size: 18px;
+              }
+              .jr {
+                color: rgb(51, 51, 51);
+              }
+              .zdzb {
+                color: #cd4d00;
+              }
+            }
+            div {
+              margin-left: 50px;
+            }
+          }
+          .xian {
+            position: relative;
+            left: 347px;
+            top: -151px;
+            img {
+              width: 1px;
+              height: 155px;
+            }
+          }
+        }
+
+        // 1.2
+        .mainleft1-list2 {
+          width: 324px;
+          height: 162px;
+          float: left;
+          position: relative;
+          p {
+            margin: 10px 0 0 25px;
+            a {
+              cursor: pointer;
+              span {
+                font-family: "Microsoft Yahei";
+                font-weight: 700;
+                font-size: 18px;
+              }
+              .jr {
+                color: rgb(51, 51, 51);
+              }
+              .zdzb {
+                color: #cd4d00;
+              }
+            }
+          }
+
+          .pricewrap {
+            width: 132.6px;
+            .price {
+              font-family: "Arial Negreta", "Arial";
+              color: #b12704;
+              font-weight: 700;
+              display: block;
+              margin: 40px 0 0 25px;
+
+              .fh {
+                font-size: 16px;
+              }
+              .jq {
+                font-size: 23px;
+              }
+            }
+
+            .ljck {
+              margin: 22px 0 0 25px;
+              span {
+                font-size: 12px;
+                color: #767676;
+                line-height: 20px;
+              }
+            }
+          }
+
+          .sx {
+            width: 144px;
+            height: 134px;
+            position: absolute;
+            top: 10px;
+            right: 30px;
+          }
+        }
+
+        .xian {
+          position: relative;
+
+          left: 0px;
+          top: 15px;
+          img {
+            width: 1px;
+            height: 155px;
+          }
+        }
+
+        // 1.3
+        .mainleft1-list3 {
+          position: absolute;
+          top: 15px;
+          right: 43px;
+          p {
+            a {
+              cursor: pointer;
+              span {
+                font-family: "Microsoft Yahei";
+                font-weight: 700;
+                font-size: 18px;
+              }
+              .jr {
+                color: rgb(51, 51, 51);
+              }
+              .zdzb {
+                color: #cd4d00;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    // 2
+    .mainleft2 {
+      // width: 1200px;
+      // height: 384px;
+      // border: 1px solid #000;
+      float: left;
+      margin-left: 25px;
+      margin-bottom: 40px;
+      .mainleft2-title {
+        margin-bottom: 5px;
+        span {
+          font-size: 28px;
+          color: #111;
+          font-weight: 700;
+          margin-right: 10px;
+        }
+        a {
+          font-size: 15px;
+          color: #0066c0;
+          text-decoration: none;
+        }
+      }
+
+      .mainleft2-list {
+        li {
+          // width: 230px;
+          // height: 310px;
+          padding: 3px;
+          float: left;
+          position: relative;
+          a {
+            text-decoration: none;
+          }
+          img {
+            display: block;
+            width: 228px;
+            height: 250px;
+            margin-bottom: 15px;
+          }
+          span {
+            color: #b12704;
+            font-size: 17px;
+            margin-left: 15px;
+          }
+          p {
+            width: 200px;
+            overflow: hidden;
+            color: #111;
+            font-size: 17px;
+            font-weight: 700;
+            margin: 35px 0 10px 15px;
+          }
+          i {
+            color: #111;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+
+    //3
+    .mainleft3 {
+      padding-bottom: 12px;
+      .mainleft3-list {
+        border: 1px solid #d8d8d8;
+
+        height: 310px;
+        li {
+          padding: 0;
+          padding-top: 0;
+          padding-left: 3px;
+        }
+        .mainleft3-list1 {
+          padding-left: 0;
+        }
+      }
+    }
+
+    //5
+    .mainleft5-list {
+      margin-top: 15px;
+      img {
+        width: 1150px;
+        height: 604px;
+      }
+    }
+  }
+
+  // 主体内容右边
+  .mainright-ad {
+    width: 310px;
+    height: 2280px;
+    background: #eeebeb;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    padding: 0 5px 0 5px;
+    .mainright-ad1 {
+      padding-top: 15px;
+    }
+
+    .adxiandiv {
+      width: 264px;
+      margin-left: 20px;
+      .ad-xian {
+        height: 1px;
+        background-color: #e2e3e5;
+        border: none;
+      }
+    }
+  }
+}
+
+
+// 底部
+.bottom{
+  width: 100%;
+  height: 300px;
+  background: rgb(204, 52, 166);
+}
