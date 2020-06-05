@@ -720,11 +720,12 @@ section {
   .mainright-ad {
     width: 310px;
     height: 2280px;
-    background: #eeebeb;
+    background: #f6f4f4;
     position: absolute;
     right: 15px;
     top: 0;
     padding: 0 5px 0 5px;
+
     .mainright-ad1 {
       padding-top: 15px;
     }
@@ -738,13 +739,49 @@ section {
         border: none;
       }
     }
+
+    .mainright-ad2 {
+      h4 {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .mainright-ad2-list {
+        ul {
+          margin-left: 75px;
+          li {
+            margin-bottom: 10px;
+            span {
+              font-size: 36px;
+              color: #ccc;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #0066c0;
+        font-size: 13px;
+        margin-bottom: 10px;
+      }
+    }
+
+    .mainright-ad2 {
+      padding-top: 0px;
+    }
   }
 }
 
-
 // 底部
-.bottom{
+.bottom {
   width: 100%;
   height: 300px;
   background: rgb(204, 52, 166);
+  img{
+    width: 100%;
+    height: 300px;
+  }
 }

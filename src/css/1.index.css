@@ -719,7 +719,7 @@ section .mainwrap .mainleft5-list img {
 section .mainright-ad {
   width: 310px;
   height: 2280px;
-  background: #eeebeb;
+  background: #f6f4f4;
   position: absolute;
   right: 15px;
   top: 0;
@@ -741,8 +741,46 @@ section .mainright-ad .adxiandiv .ad-xian {
   border: none;
 }
 
+section .mainright-ad .mainright-ad2 h4 {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+section .mainright-ad .mainright-ad2 .mainright-ad2-list ul {
+  margin-left: 75px;
+}
+
+section .mainright-ad .mainright-ad2 .mainright-ad2-list ul li {
+  margin-bottom: 10px;
+}
+
+section .mainright-ad .mainright-ad2 .mainright-ad2-list ul li span {
+  font-size: 36px;
+  color: #ccc;
+  margin-right: 10px;
+}
+
+section .mainright-ad .mainright-ad2 a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #0066c0;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+section .mainright-ad .mainright-ad2 {
+  padding-top: 0px;
+}
+
 .bottom {
   width: 100%;
   height: 300px;
   background: #cc34a6;
+}
+
+.bottom img {
+  width: 100%;
+  height: 300px;
 }
