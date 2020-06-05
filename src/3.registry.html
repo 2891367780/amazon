@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>亚马逊登录</title>
-    <link rel="stylesheet" href="css/2.login.css" />
+    <title>亚马逊注册</title>
+    <link rel="stylesheet" href="css/3.registry.css" />
     <link rel="stylesheet" href="css/global.css" />
   </head>
   <body>
-    <div class="loginwrap">
-      <div class="login">
+    <div class="registrywrap">
+      <div class="registry">
         <!-- logo -->
         <div class="logowrap">
           <div id="nav-logo">
@@ -23,11 +23,11 @@
         </div>
 
         <!-- 登录 -->
-        <div class="loginlist">
-          <div class="logininput">
+        <div class="registrylist">
+          <div class="registryinput">
             <!-- 1 -->
             <h1 class="a-spacing-small">
-              登录
+              创建账户
             </h1>
 
             <!-- 2 -->
@@ -35,59 +35,87 @@
               <form action="">
                 <p class="username-wrap">
                   <label for="ap_email">
-                    用户姓名:
+                    您的姓名:
                   </label>
                   <input
                     type="text"
                     maxlength="128"
                     id="ap_email"
                     class="username"
-                    placeholder="邮箱/账号/已验证的手机"
+                    placeholder="6-10字母、数字或符号"
                   />
                   <!-- 提示错误信息 -->
                   <span></span>
                 </p>
 
-                <p>
+                <p class="username-wrap">
                   <label for="ap_email">
-                    用户密码:
+                    设置密码:
                   </label>
                   <input
                     type="password"
                     maxlength="128"
                     id="ap_email"
                     class="username"
-                    placeholder="密码"
+                    placeholder="6-20位字母、数字或符号"
                   />
+                  <!-- 提示错误信息 -->
+                  <span></span>
                 </p>
-                <!-- 提示错误信息 -->
-                <span></span>
+
+                <p class="username-wrap">
+                  <label for="ap_email">
+                    确认密码:
+                  </label>
+                  <input
+                    type="password"
+                    maxlength="128"
+                    id="ap_email"
+                    class="username"
+                    placeholder="6-20位字母、数字或符号"
+                  />
+                  <!-- 提示错误信息 -->
+                  <span></span>
+                </p>
+
+                <p class="username-wrap">
+                  <label for="ap_email">
+                    您的邮箱:
+                  </label>
+                  <input
+                    type="email"
+                    maxlength="128"
+                    id="ap_email"
+                    class="username"
+                    placeholder="请输入正确的邮箱"
+                  />
+                  <!-- 提示错误信息 -->
+                  <span></span>
+                </p>
               </form>
+
+              <!-- 复选框 -->
+              <p class="checkmesg">
+                <input type="checkbox" />
+                <span>我已阅读并同意网站的使用条件及隐私声明。</span>
+              </p>
             </div>
 
             <!-- 3 -->
             <div class="a-section">
               <span class="a-button-span12">
                 <span class="a-button-inner">
-                  <input class="btn" type="button" value="登录" />
+                  <input class="btn" type="submit" value="立即注册" />
                   <span class="a-button-text">
-                    登录
+                    立即注册
                   </span>
                 </span>
               </span>
             </div>
 
-            <!-- 4 -->
-            <div class="help">
-              <a href="">
-                <i class="help-icon"></i>
-                <span>需要帮助?</span>
-              </a>
-            </div>
-
             <!-- 5 -->
             <div class="a-divider a-divider-break">
-              <h5>更多登录方式</h5>
+              <h5>其他注册方式</h5>
             </div>
 
             <!-- 6 -->
@@ -100,7 +128,7 @@
                   >
                     <i class="a-icon-share-wechat"> </i>
                     <span class="wechat_button_label">
-                      微信账号登录
+                      微信账号注册
                     </span>
                   </a>
                 </span>
@@ -109,27 +137,12 @@
 
             <!-- 7 -->
             <div class="notice">
-              登录即表示你同意网站的使用条件及隐私声明
+              <span>已有账户?</span>
+              <a href="">登录</a>
+              <div class="icon-arrow"></div>
             </div>
           </div>
         </div>
-
-        <!-- 新客户 -->
-        <div class="a-divider a-divider-break amazon-new">
-          <h5>Amazon的新客户?</h5>
-        </div>
-
-        <!-- 创建账户 -->
-        <span class="a-button-base"
-          ><span class="a-button-inner"
-            ><a
-              href="https://www.amazon.cn/ap/register?showRememberMe=true&amp;openid.pape.max_auth_age=0&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=cnflex&amp;ignoreAuthState=1&amp;openid.return_to=https%3A%2F%2Fwww.amazon.cn%2F%3Fref_%3Dnav_signin&amp;prevRID=RXHSQF1E1EZ2F29TNJBD&amp;openid.assoc_handle=cnflex&amp;openid.mode=checkid_setup&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
-              class="a-button-text"
-            >
-              创建您的 Amazon 账户
-            </a></span
-          ></span
-        >
 
         <!--分割线  -->
         <div class="a-divider-inner">

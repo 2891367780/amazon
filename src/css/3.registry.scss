@@ -1,11 +1,11 @@
 @charset "utf-8";
-.loginwrap {
+.registrywrap {
   width: 100%;
   //   height:900px;
   margin: 0 auto;
   //   background: yellow;
 
-  .login {
+  .registry {
     // logo
     .logowrap {
       padding-top: 20px;
@@ -24,14 +24,16 @@
       }
     }
 
-    .loginlist {
+    // 注册内容
+    .registrylist {
       width: 350px;
-      height: 410px;
+      height: 550px;
       border-radius: 4px;
       border: 1px #ddd solid;
       background: #fff;
-      margin-left: 573px;
-      .logininput {
+
+      margin: 0 0 30px 573px;
+      .registryinput {
         padding: 20px 40px 20px 26px;
         // 1
         h1 {
@@ -44,10 +46,10 @@
 
         // 2
         .telinput {
-          .username-wrap {
-              margin-bottom: 10px;
-          }
           margin-bottom: 10px;
+          .username-wrap {
+            margin-bottom: 10px;
+          }
           label {
             display: block;
             padding-left: 2px;
@@ -74,6 +76,15 @@
               0 1px 0 rgba(0, 0, 0, 0.07) inset;
             outline: 0;
             color: #111;
+          }
+
+          .checkmesg {
+            padding: 10px 0 10px 0;
+            span {
+              font-size: 13px;
+              font-weight: 400;
+              color: #111;
+            }
           }
         }
 
@@ -141,29 +152,6 @@
           }
         }
 
-        // 4
-        .help {
-          margin-bottom: 20px;
-          a {
-            position: relative;
-            .help-icon {
-              width: 10px;
-              height: 10px;
-              background: url("https://images-cn.ssl-images-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-c4a765aedd886dc04d89e7e93b6a02c59ecb7013._V2_.png");
-              background-repeat: no-repeat;
-              background-position: -366px -86px;
-              position: absolute;
-              top: 50%;
-              margin-top: -4px;
-            }
-            span {
-              padding-left: 10px;
-              font-size: 13px;
-              color: #0066c0;
-            }
-          }
-        }
-
         // 6
         .wx {
           width: 299px;
@@ -225,13 +213,33 @@
         // 7
         .notice {
           margin: 30px 0;
-          font-size: 12px;
-          color: #111;
+          span {
+            font-size: 12px;
+            color: #111;
+            float: left;
+          }
+          a {
+            width: 100px;
+            height: 10px;
+            padding-left: 10px;
+            color: #0066c0;
+            float: left;
+          }
+          .icon-arrow {
+            width: 10px;
+            height: 10px;
+            background-image: url('https://images-cn.ssl-images-amazon.com/images/G/01/AUIClients/AmazonUIBaseCSS-sprite_1x-c4a765aedd886dc04d89e7e93b6a02c59ecb7013._V2_.png');
+            background-repeat: no-repeat;
+            background-position: -346px -86px;
+            position: relative;
+            top: 5px;
+            left: 93px;
+          }
         }
       }
     }
 
-    // 5   两个地方公用--新客户\更多登录方式
+    // 5
     .a-divider-break {
       text-align: center;
       position: relative;
@@ -268,48 +276,6 @@
     .amazon-new {
       width: 350px;
       margin: 25px 0 15px 574px;
-    }
-
-    // 创建账户
-    .a-button-base {
-      width: 350px;
-      background: #e7e9ec;
-      border-radius: 3px;
-      border-color: #adb1b8 #a2a6ac #8d9096;
-      border-style: solid;
-      border-width: 1px;
-      margin-left: 574px;
-      margin-bottom: 30px;
-      cursor: pointer;
-      display: inline-block;
-      padding: 0;
-      text-align: center;
-      text-decoration: none !important;
-      vertical-align: middle;
-      .a-button-inner {
-        background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
-        display: block;
-        position: relative;
-        overflow: hidden;
-        height: 29px;
-        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
-        border-radius: 2px;
-        .a-button-text {
-          color: #111;
-
-          background-color: transparent;
-          border: 0;
-          display: block;
-          font-family: "Hiragino Sans GB", "Microsoft Yahei", Arial, sans-serif;
-          font-size: 13px;
-          line-height: 29px;
-          margin: 0;
-          outline: 0;
-          padding: 0 10px 0 11px;
-          text-align: center;
-          white-space: nowrap;
-        }
-      }
     }
 
     // 分割线
