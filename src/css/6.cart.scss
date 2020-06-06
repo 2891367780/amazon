@@ -1,0 +1,140 @@
+.cartwrap {
+  width: 100%;
+  overflow-x: hidden;
+  .cart {
+    .cartmainwrap {
+      width: 1500px;
+      height: 600px;
+      background: rosybrown;
+      display: flex;
+
+      // 购物车左边
+      .cartmainleft {
+        width: 1200px;
+        height: 600px;
+        background: salmon;
+        padding-left: 30px;
+        padding-top: 20px;
+        h2 {
+          font-size: 21px;
+          font-weight: 700px;
+          width: 1070px;
+          height: 40px;
+          border-bottom: 2px solid #ccc;
+          a {
+            color: #111;
+          }
+        }
+
+        // 购物车头部标签
+        .carttop {
+          display: flex;
+          margin: 30px 0 30px 0;
+          .carttop-checkbox {
+            width: 100px;
+            margin-top: -3px;
+          }
+          .carttop-goods {
+            width: 280px;
+          }
+          .carttop-kong {
+            width: 180px;
+          }
+          .carttop-price {
+            width: 160px;
+          }
+          .carttop-num {
+            width: 110px;
+          }
+          .carttop-sum {
+            width: 160px;
+          }
+          .carttop-del {
+            width: 30px;
+          }
+        }
+
+        // 购物车列表展示
+        .cartshowwrap {
+          width: 1070px;
+          //   height: 600px;
+          border: 1px solid #ccc;
+          border-bottom: none;
+          .cartshow {
+            padding-top: 20px;
+            ul {
+              height: 170px;
+              border-bottom: 1px solid #ccc;
+              padding: 20px 0;
+              li {
+                float: left;
+              }
+              .cartshow1 {
+                input {
+                  margin: 0 20px 0 30px;
+                }
+              }
+
+              .cartshow2 {
+                display: flex;
+                span {
+                  display: block;
+                  width: 300px;
+                  margin: 0 69px 0 20px;
+                  color: #0066c0;
+                  font-size: 17px;
+                  font-weight: 700px;
+                }
+              }
+
+              .cartshow4 {
+                margin-right: 85px;
+                strong {
+                  color: #3c3c3c;
+                  font-size: 17px;
+                  font-weight: 700;
+                }
+              }
+
+              .cartshow5 {
+                width: 75px;
+                height: 27px;
+                background: #f0f0f0;
+                text-align: center;
+                border: 1px solid #e5e5e5;
+                margin-right: 45px;
+                input {
+                  width: 41px;
+                  height: 25px;
+                  text-align: center;
+                  border: 1px solid #aaa;
+                }
+              }
+
+              .cartshow6 {
+                color: #b12704;
+                font-size: 17px;
+                font-weight: 700;
+              }
+
+              .cartshow7 {
+                margin-left: 106px;
+                a {
+                  color: #3c3c3c;
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // 购物车右边
+      .cartmainright {
+        width: 250px;
+        height: 600px;
+        background: rgb(148, 122, 235);
+      }
+    }
+  }
+}
