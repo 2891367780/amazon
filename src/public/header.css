@@ -21,6 +21,7 @@ header {
   width: 100%;
   height: 39px;
   margin: 0 auto;
+  
 }
 
 header .nav {
@@ -32,6 +33,8 @@ header .nav #nav-logo {
   width: 120px;
   float: left;
   margin-right: 72px;
+  position: relative;
+  
 }
 
 header .nav #nav-logo .nav-logo-link .nav-sprite {
@@ -45,7 +48,7 @@ header .nav #nav-logo .nav-logo-link .nav-sprite {
 
 header .nav #nav-logo .nav-logo-prime {
   position: absolute;
-  top: 85px;
+  top: 34px;
   left: 79px;
   font-size: 11px;
   line-height: 11px;

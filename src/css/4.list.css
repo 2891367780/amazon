@@ -4,7 +4,7 @@
 
 .listwrap .list {
   width: 100%;
-  height: 800px;
+  height: 1500px;
   background: #caec86;
   margin: 0 auto;
 }
@@ -26,8 +26,208 @@
 }
 
 .listwrap .list .listnavwrap a .listnav ul li {
+  padding-bottom: 5px;
   float: left;
   margin-right: 25px;
-  height: 33px;
-  line-height: 20px;
+  color: #333;
+  font-size: 12px;
+}
+
+.listwrap .list .listnavwrap a .listnav ul .listnav1 {
+  font-weight: bold;
+}
+
+.listwrap .list .listnavwrap a .listnav ul li:hover {
+  color: orange;
+}
+
+.listwrap .list .listmainwrap {
+  width: 100%;
+  height: 1500px;
+  background: palevioletred;
+}
+
+.listwrap .list .listmainwrap .listmain {
+  display: flex;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft {
+  width: 190px;
+  height: 1500px;
+  background: peru;
+  padding-left: 10px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left1 h2 {
+  font-size: 17px;
+  font-weight: 400px;
+  color: #767676;
+  margin-bottom: 14px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left1 ul li {
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left1 ul li a {
+  color: #111;
+  text-decoration: none;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left1 ul li a span {
+  display: inline-block;
+  background-image: url(https://images-cn.ssl-images-amazon.com/images/G/28/nav2/images/gui/searchSprite._CB485967710_.png);
+  background-repeat: no-repeat;
+  background-position: -154px -800px;
+  width: 9px;
+  height: 9px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left1 ul li a:hover {
+  color: orange;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left1 ul .jh {
+  font-weight: 700;
+  color: #111;
+  padding-left: 12px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left1 .listmain-xian {
+  background-color: transparent;
+  display: block;
+  height: 1px;
+  border-width: 0;
+  border-top: 1px solid #e7e7e7;
+  line-height: 19px;
+  margin: 14px 10px 0 0;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left2 {
+  margin-bottom: 20px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left2 h3 {
+  font-size: 17px;
+  font-weight: 400px;
+  color: #767676;
+  margin: 15px 0 20px 0;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left2 h4 {
+  font-weight: 700;
+  font-size: 12px;
+  color: #111;
+  margin-bottom: 6px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left2 input {
+  cursor: pointer;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left2 .left2-list1 {
+  margin-bottom: 18px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left2 .left2-list1 img {
+  margin-top: -4px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left2 .left2-list2 a {
+  text-decoration: none;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left2 .left2-list2 a ul li {
+  font-size: 12px;
+  color: #111;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left2 .left2-list2 a ul li:hover {
+  color: orange;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left6 span {
+  font-size: 12px;
+  color: #111;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left6 .star {
+  background-image: url("https://images-cn.ssl-images-amazon.com/images/G/01/AUIClients/AmazonUIIcon-sprite_1x-003a05344e6a5263c945684c66748394b4cbb9a2._V2_.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 95px;
+  height: 21px;
+  margin-right: 1px;
+  position: relative;
+  top: 5px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left6 .star5 {
+  background-position: -5px -396px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left6 .star4 {
+  background-position: -24px -396px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left6 .star3 {
+  background-position: -43px -396px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left6 .star2 {
+  background-position: -62px -396px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left6 .star1 {
+  background-position: -81px -396px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left7 {
+  position: relative;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left7 ul li {
+  margin-bottom: 3px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left7 input {
+  height: 31px;
+  border-radius: 3px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left7 .max {
+  width: 60px;
+  text-indent: 23px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left7 .start {
+  width: 48px;
+  background: #d8d6d6;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left7 span {
+  position: absolute;
+  top: 132px;
+  left: 7px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .left7 .minfh {
+  left: 70px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .choosemore {
+  color: #0066c0;
+  font-size: 12px;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainleft .choosemore:hover {
+  color: orange;
+  text-decoration: underline !important;
+}
+
+.listwrap .list .listmainwrap .listmain .listmainright {
+  width: 800px;
+  height: 800px;
+  background: royalblue;
 }
