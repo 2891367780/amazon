@@ -7,7 +7,7 @@ $adheight: 40px;
 }
 
 .topad {
-  background: #ffd744;
+  // background: #ffd744;
   width: 100%;
   min-height: $adheight;
   max-height: $adheight + 20;
@@ -165,7 +165,7 @@ header {
   .nav-main-left {
     height: 55px;
     float: left;
-    background: yellow;
+    // background: yellow;
     #nav-shop {
       padding: 6px 12px 0 15px;
       text-decoration: none;
@@ -201,7 +201,7 @@ header {
   //导航中间
   .nav-main-center {
     height: 55px;
-    background: orchid;
+    // background: orchid;
     width: 949px;
     float: left;
     .nav-xshop-container {
@@ -223,7 +223,7 @@ header {
     float: left;
     height: 55px;
     width: 368px;
-    background: palegreen;
+    // background: palegreen;
     .nav-tools {
       padding: 6px 7px 0 40px;
 
@@ -475,10 +475,10 @@ header {
 //主体内容展示--------------------------------------------------------
 section {
   position: relative;
-  height: 2300px;
+  // height: 2300px;
   .mainwrap {
     width: 1200px;
-    height: 2200px;
+    // height: 2200px;
     background: palegreen;
 
     // 主体内容左边第一块
@@ -651,137 +651,140 @@ section {
         }
       }
 
-      .mainleft2-list {
-        li {
-          // width: 230px;
-          // height: 310px;
-          padding: 3px;
-          float: left;
-          position: relative;
-          a {
-            text-decoration: none;
-          }
-          img {
-            display: block;
-            width: 228px;
-            height: 250px;
-            margin-bottom: 15px;
-          }
-          span {
-            color: #b12704;
-            font-size: 17px;
-            margin-left: 15px;
-          }
-          p {
-            width: 200px;
-            overflow: hidden;
-            color: #111;
-            font-size: 17px;
-            font-weight: 700;
-            margin: 35px 0 10px 15px;
-          }
-          i {
-            color: #111;
-            margin-left: 15px;
-          }
-        }
-      }
-    }
+      li {
+        // width: 260px;
+        // height: 310px;
+        padding: 3px;
 
-    //3
-    .mainleft3 {
-      padding-bottom: 12px;
-      .mainleft3-list {
-        border: 1px solid #d8d8d8;
-
-        height: 310px;
-        li {
-          padding: 0;
-          padding-top: 0;
-          padding-left: 3px;
+        float: left;
+        position: relative;
+        a {
+          text-decoration: none;
         }
-        .mainleft3-list1 {
-          padding-left: 0;
+        img {
+          display: block;
+          width: 228px;
+          height: 250px;
+          margin-bottom: 15px;
         }
-      }
-    }
-
-    //5
-    .mainleft5-list {
-      margin-top: 15px;
-      img {
-        width: 1150px;
-        height: 604px;
+        span {
+          color: #b12704;
+          font-size: 17px;
+          margin-left: 15px;
+        }
+        p {
+          width: 200px;
+          overflow: hidden;
+          color: #111;
+          font-size: 17px;
+          font-weight: 700;
+          margin: 35px 0 10px 15px;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        i {
+          color: #111;
+          margin-left: 15px;
+        }
       }
     }
   }
 
-  // 主体内容右边
-  .mainright-ad {
-    width: 310px;
-    height: 2280px;
-    background: #f6f4f4;
-    position: absolute;
-    right: 15px;
-    top: 0;
-    padding: 0 5px 0 5px;
+  //3
+  .mainleft3 {
+    padding-bottom: 12px;
+    .mainleft3-list {
+      border: 1px solid #d8d8d8;
 
-    .mainright-ad1 {
-      padding-top: 15px;
-    }
-
-    .adxiandiv {
-      width: 264px;
-      margin-left: 20px;
-      .ad-xian {
-        height: 1px;
-        background-color: #e2e3e5;
-        border: none;
+      height: 310px;
+      li {
+        padding: 0;
+        padding-top: 0;
+        padding-left: 3px;
+      }
+      .mainleft3-list1 {
+        padding-left: 0;
       }
     }
+  }
 
-    .mainright-ad2 {
-      h4 {
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-      }
-      .mainright-ad2-list {
-        ul {
-          margin-left: 75px;
-          li {
-            margin-bottom: 10px;
-            span {
-              font-size: 36px;
-              color: #ccc;
-              margin-right: 10px;
-            }
+  //5
+  .mainleft5-list {
+    margin-top: 15px;
+    img {
+      width: 1150px;
+      height: 604px;
+    }
+  }
+}
+
+// 主体内容右边
+.mainright-ad {
+  width: 310px;
+  height: 2280px;
+  background: #f6f4f4;
+  position: absolute;
+  right: 15px;
+  top: 0;
+  padding: 0 5px 0 5px;
+
+  .mainright-ad1 {
+    padding-top: 15px;
+  }
+
+  .adxiandiv {
+    width: 264px;
+    margin-left: 20px;
+    .ad-xian {
+      height: 1px;
+      background-color: #e2e3e5;
+      border: none;
+    }
+  }
+
+  .mainright-ad2 {
+    h4 {
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .mainright-ad2-list {
+      ul {
+        margin-left: 75px;
+        li {
+          margin-bottom: 10px;
+          span {
+            font-size: 36px;
+            color: #ccc;
+            margin-right: 10px;
           }
         }
       }
-      a {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        color: #0066c0;
-        font-size: 13px;
-        margin-bottom: 10px;
-      }
     }
+    a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #0066c0;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+  }
 
-    .mainright-ad2 {
-      padding-top: 0px;
-    }
+  .mainright-ad2 {
+    padding-top: 0px;
   }
 }
 
 // 底部
 .bottom {
   width: 100%;
-  height: 300px;
-  background: rgb(204, 52, 166);
-  img{
+  // height: 300px;
+  // background: rgb(204, 52, 166);
+  img {
     width: 100%;
     height: 300px;
+    
   }
 }

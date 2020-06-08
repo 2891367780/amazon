@@ -4,21 +4,21 @@
   .cart {
     .cartmainwrap {
       width: 1500px;
-      height: 600px;
+      // height: 600px;
       background: rosybrown;
       display: flex;
 
-      // 购物车左边
+      // 购物车
       .cartmainleft {
-        width: 1200px;
-        height: 600px;
+        width: 1500px;
+        // height: 600px;
         background: salmon;
-        padding-left: 30px;
+        padding-left: 170px;
         padding-top: 20px;
         h2 {
           font-size: 21px;
           font-weight: 700px;
-          width: 1070px;
+          width: 1170px;
           height: 40px;
           border-bottom: 2px solid #ccc;
           a {
@@ -33,6 +33,9 @@
           .carttop-checkbox {
             width: 100px;
             margin-top: -3px;
+            input {
+              margin-right: 5px;
+            }
           }
           .carttop-goods {
             width: 280px;
@@ -44,10 +47,10 @@
             width: 160px;
           }
           .carttop-num {
-            width: 110px;
+            width: 143px;
           }
           .carttop-sum {
-            width: 160px;
+            width: 252px;
           }
           .carttop-del {
             width: 30px;
@@ -56,7 +59,7 @@
 
         // 购物车列表展示
         .cartshowwrap {
-          width: 1070px;
+          width: 1170px;
           //   height: 600px;
           border: 1px solid #ccc;
           border-bottom: none;
@@ -102,7 +105,7 @@
                 background: #f0f0f0;
                 text-align: center;
                 border: 1px solid #e5e5e5;
-                margin-right: 45px;
+                margin-right: 80px;
                 input {
                   width: 41px;
                   height: 25px;
@@ -118,7 +121,7 @@
               }
 
               .cartshow7 {
-                margin-left: 106px;
+                margin-left: 195px;
                 a {
                   color: #3c3c3c;
                   font-size: 12px;
@@ -128,12 +131,24 @@
           }
         }
       }
+    }
 
-      // 购物车右边
-      .cartmainright {
-        width: 250px;
-        height: 600px;
-        background: rgb(148, 122, 235);
+    // 最底部结算
+    .cartfoot {
+      width: 1170px;
+      height: 50px;
+      background: #e5e5e5;
+      margin-left: 170px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      line-height: 50px;
+      display: flex;
+      .carttop-checkbox {
+        input {
+          margin-right: 5px;
+          
+        }
       }
     }
   }

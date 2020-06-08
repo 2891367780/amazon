@@ -3,7 +3,6 @@
 }
 
 .topad {
-  background: #ffd744;
   width: 100%;
   min-height: 40px;
   max-height: 60px;
@@ -153,7 +152,6 @@ header .nav #nav-ad div {
 #nav-main .nav-main-left {
   height: 55px;
   float: left;
-  background: yellow;
 }
 
 #nav-main .nav-main-left #nav-shop {
@@ -189,7 +187,6 @@ header .nav #nav-ad div {
 
 #nav-main .nav-main-center {
   height: 55px;
-  background: orchid;
   width: 949px;
   float: left;
 }
@@ -213,7 +210,6 @@ header .nav #nav-ad div {
   float: left;
   height: 55px;
   width: 368px;
-  background: palegreen;
 }
 
 #nav-main .nav-main-right .nav-tools {
@@ -462,12 +458,10 @@ header .nav #nav-ad div {
 
 section {
   position: relative;
-  height: 2300px;
 }
 
 section .mainwrap {
   width: 1200px;
-  height: 2200px;
   background: palegreen;
 }
 
@@ -651,72 +645,75 @@ section .mainwrap .mainleft2 .mainleft2-title a {
   text-decoration: none;
 }
 
-section .mainwrap .mainleft2 .mainleft2-list li {
+section .mainwrap .mainleft2 li {
   padding: 3px;
   float: left;
   position: relative;
 }
 
-section .mainwrap .mainleft2 .mainleft2-list li a {
+section .mainwrap .mainleft2 li a {
   text-decoration: none;
 }
 
-section .mainwrap .mainleft2 .mainleft2-list li img {
+section .mainwrap .mainleft2 li img {
   display: block;
   width: 228px;
   height: 250px;
   margin-bottom: 15px;
 }
 
-section .mainwrap .mainleft2 .mainleft2-list li span {
+section .mainwrap .mainleft2 li span {
   color: #b12704;
   font-size: 17px;
   margin-left: 15px;
 }
 
-section .mainwrap .mainleft2 .mainleft2-list li p {
+section .mainwrap .mainleft2 li p {
   width: 200px;
   overflow: hidden;
   color: #111;
   font-size: 17px;
   font-weight: 700;
   margin: 35px 0 10px 15px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-section .mainwrap .mainleft2 .mainleft2-list li i {
+section .mainwrap .mainleft2 li i {
   color: #111;
   margin-left: 15px;
 }
 
-section .mainwrap .mainleft3 {
+section .mainleft3 {
   padding-bottom: 12px;
 }
 
-section .mainwrap .mainleft3 .mainleft3-list {
+section .mainleft3 .mainleft3-list {
   border: 1px solid #d8d8d8;
   height: 310px;
 }
 
-section .mainwrap .mainleft3 .mainleft3-list li {
+section .mainleft3 .mainleft3-list li {
   padding: 0;
   padding-top: 0;
   padding-left: 3px;
 }
 
-section .mainwrap .mainleft3 .mainleft3-list .mainleft3-list1 {
+section .mainleft3 .mainleft3-list .mainleft3-list1 {
   padding-left: 0;
 }
 
-section .mainwrap .mainleft5-list {
+section .mainleft5-list {
   margin-top: 15px;
 }
 
-section .mainwrap .mainleft5-list img {
+section .mainleft5-list img {
   width: 1150px;
   height: 604px;
 }
 
-section .mainright-ad {
+.mainright-ad {
   width: 310px;
   height: 2280px;
   background: #f6f4f4;
@@ -726,42 +723,42 @@ section .mainright-ad {
   padding: 0 5px 0 5px;
 }
 
-section .mainright-ad .mainright-ad1 {
+.mainright-ad .mainright-ad1 {
   padding-top: 15px;
 }
 
-section .mainright-ad .adxiandiv {
+.mainright-ad .adxiandiv {
   width: 264px;
   margin-left: 20px;
 }
 
-section .mainright-ad .adxiandiv .ad-xian {
+.mainright-ad .adxiandiv .ad-xian {
   height: 1px;
   background-color: #e2e3e5;
   border: none;
 }
 
-section .mainright-ad .mainright-ad2 h4 {
+.mainright-ad .mainright-ad2 h4 {
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-section .mainright-ad .mainright-ad2 .mainright-ad2-list ul {
+.mainright-ad .mainright-ad2 .mainright-ad2-list ul {
   margin-left: 75px;
 }
 
-section .mainright-ad .mainright-ad2 .mainright-ad2-list ul li {
+.mainright-ad .mainright-ad2 .mainright-ad2-list ul li {
   margin-bottom: 10px;
 }
 
-section .mainright-ad .mainright-ad2 .mainright-ad2-list ul li span {
+.mainright-ad .mainright-ad2 .mainright-ad2-list ul li span {
   font-size: 36px;
   color: #ccc;
   margin-right: 10px;
 }
 
-section .mainright-ad .mainright-ad2 a {
+.mainright-ad .mainright-ad2 a {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -770,14 +767,12 @@ section .mainright-ad .mainright-ad2 a {
   margin-bottom: 10px;
 }
 
-section .mainright-ad .mainright-ad2 {
+.mainright-ad .mainright-ad2 {
   padding-top: 0px;
 }
 
 .bottom {
   width: 100%;
-  height: 300px;
-  background: #cc34a6;
 }
 
 .bottom img {

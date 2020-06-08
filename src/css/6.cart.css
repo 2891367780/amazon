@@ -5,23 +5,21 @@
 
 .cartwrap .cart .cartmainwrap {
   width: 1500px;
-  height: 600px;
   background: rosybrown;
   display: flex;
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft {
-  width: 1200px;
-  height: 600px;
+  width: 1500px;
   background: salmon;
-  padding-left: 30px;
+  padding-left: 170px;
   padding-top: 20px;
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft h2 {
   font-size: 21px;
   font-weight: 700px;
-  width: 1070px;
+  width: 1170px;
   height: 40px;
   border-bottom: 2px solid #ccc;
 }
@@ -40,6 +38,10 @@
   margin-top: -3px;
 }
 
+.cartwrap .cart .cartmainwrap .cartmainleft .carttop .carttop-checkbox input {
+  margin-right: 5px;
+}
+
 .cartwrap .cart .cartmainwrap .cartmainleft .carttop .carttop-goods {
   width: 280px;
 }
@@ -53,11 +55,11 @@
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft .carttop .carttop-num {
-  width: 110px;
+  width: 143px;
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft .carttop .carttop-sum {
-  width: 160px;
+  width: 252px;
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft .carttop .carttop-del {
@@ -65,7 +67,7 @@
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft .cartshowwrap {
-  width: 1070px;
+  width: 1170px;
   border: 1px solid #ccc;
   border-bottom: none;
 }
@@ -117,7 +119,7 @@
   background: #f0f0f0;
   text-align: center;
   border: 1px solid #e5e5e5;
-  margin-right: 45px;
+  margin-right: 80px;
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft .cartshowwrap .cartshow ul .cartshow5 input {
@@ -134,7 +136,7 @@
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft .cartshowwrap .cartshow ul .cartshow7 {
-  margin-left: 106px;
+  margin-left: 195px;
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft .cartshowwrap .cartshow ul .cartshow7 a {
@@ -142,8 +144,18 @@
   font-size: 12px;
 }
 
-.cartwrap .cart .cartmainwrap .cartmainright {
-  width: 250px;
-  height: 600px;
-  background: #947aeb;
+.cartwrap .cart .cartfoot {
+  width: 1170px;
+  height: 50px;
+  background: #e5e5e5;
+  margin-left: 170px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  line-height: 50px;
+  display: flex;
+}
+
+.cartwrap .cart .cartfoot .carttop-checkbox input {
+  margin-right: 5px;
 }
