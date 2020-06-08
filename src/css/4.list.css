@@ -4,7 +4,6 @@
 
 .listwrap .list {
   width: 100%;
-  height: 2000px;
   background: #caec86;
   margin: 0 auto;
 }
@@ -43,13 +42,11 @@
 
 .listwrap .list .listmainwrap {
   width: 100%;
-  height: 2000px;
   background: palevioletred;
 }
 
 .listwrap .list .listmainwrap .listmain .listmainleft {
   width: 190px;
-  height: 2000px;
   background: peru;
   padding-left: 10px;
   float: left;
@@ -121,6 +118,9 @@
 
 .listwrap .list .listmainwrap .listmain .listmainleft .left2 input {
   cursor: pointer;
+  margin-right: 5px;
+  width: 12px !important;
+  height: 12px !important;
 }
 
 .listwrap .list .listmainwrap .listmain .listmainleft .left2 .left2-list1 {
@@ -189,17 +189,18 @@
 }
 
 .listwrap .list .listmainwrap .listmain .listmainleft .left7 input {
-  height: 31px;
+  height: 31px !important;
   border-radius: 3px;
+  margin-bottom: 10px;
 }
 
 .listwrap .list .listmainwrap .listmain .listmainleft .left7 .max {
-  width: 60px;
+  width: 60px !important;
   text-indent: 23px;
 }
 
 .listwrap .list .listmainwrap .listmain .listmainleft .left7 .start {
-  width: 48px;
+  width: 45px !important;
   background: #d8d6d6;
 }
 
@@ -225,7 +226,6 @@
 
 .listwrap .list .listmainwrap .listmain .listmainright {
   width: 1320px;
-  height: 1500px;
   background: #fff;
   float: left;
 }
@@ -266,8 +266,6 @@
 
 .listwrap .list .listmainwrap .listmain .listmainright .right2 {
   margin: 30px 0 0 15px;
-  width: 1300px;
-  height: 1326px;
   background: #d5c4e6;
 }
 
@@ -285,7 +283,7 @@
 }
 
 .listwrap .list .listmainwrap .listmain .listmainright .right2 ul li a h3 {
-  font-size: 15px;
+  font-size: 17px;
   color: #0066c0;
 }
 

@@ -363,10 +363,10 @@ header .nav #nav-ad div {
 
 .bannerwrap .menuwrap .menu .menulist {
   position: absolute;
-  left: 191px;
-  top: 0;
-  width: 998px;
-  min-height: 468px;
+  left: 175px;
+  top: 1px;
+  width: 560px;
+  height: 413px;
   border: 1px solid #f7f7f7;
   background-color: #fff;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.3);
