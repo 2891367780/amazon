@@ -5,14 +5,12 @@
     .cartmainwrap {
       width: 1500px;
       // height: 600px;
-      background: rosybrown;
       display: flex;
 
       // 购物车
       .cartmainleft {
         width: 1500px;
         // height: 600px;
-        background: salmon;
         padding-left: 170px;
         padding-top: 20px;
         h2 {
@@ -44,10 +42,10 @@
             width: 180px;
           }
           .carttop-price {
-            width: 160px;
+            width: 165px;
           }
           .carttop-num {
-            width: 143px;
+            width: 157px;
           }
           .carttop-sum {
             width: 252px;
@@ -83,7 +81,7 @@
                 span {
                   display: block;
                   width: 300px;
-                  margin: 0 69px 0 20px;
+                  margin: 0 61px 0 20px;
                   color: #0066c0;
                   font-size: 17px;
                   font-weight: 700px;

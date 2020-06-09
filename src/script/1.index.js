@@ -3,7 +3,7 @@
   const $mainleft3_list = $(".mainleft3-list");
   //1.请求数据渲染----------------------------------------------------
   $.ajax({
-    url: "http://localhost/amazon/php/1.index.php",
+    url: "http://10.31.162.42/amazon/php/1.index.php",
     dataType: "json",
   }).done(function (data) {
     // console.log(data);

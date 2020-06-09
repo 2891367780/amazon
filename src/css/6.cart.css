@@ -5,13 +5,11 @@
 
 .cartwrap .cart .cartmainwrap {
   width: 1500px;
-  background: rosybrown;
   display: flex;
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft {
   width: 1500px;
-  background: salmon;
   padding-left: 170px;
   padding-top: 20px;
 }
@@ -51,11 +49,11 @@
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft .carttop .carttop-price {
-  width: 160px;
+  width: 165px;
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft .carttop .carttop-num {
-  width: 143px;
+  width: 157px;
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft .carttop .carttop-sum {
@@ -97,7 +95,7 @@
 .cartwrap .cart .cartmainwrap .cartmainleft .cartshowwrap .cartshow ul .cartshow2 span {
   display: block;
   width: 300px;
-  margin: 0 69px 0 20px;
+  margin: 0 61px 0 20px;
   color: #0066c0;
   font-size: 17px;
   font-weight: 700px;

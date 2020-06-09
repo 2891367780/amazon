@@ -7,9 +7,9 @@
     //php引入公共文件
     require "conn.php";
 
-    $pagesize = 8; //单个页面展示的数据条数
+    $pagesize = 12; //单个页面展示的数据条数
 
-    $sql = "select * from amazonindex"; //获取所有的数据
+    $sql = "select * from amazonlist"; //获取所有的数据
     $result = $conn->query($sql); //获取数据的结果集(记录集)
 
     $num = $result->num_rows; //记录集的总条数  22
@@ -34,7 +34,7 @@
     //limit 10,10  从偏移量5开始 取10条
     //limit 20,10 从偏移量14开始 取10条
 
-    $sql1 = "select * from amazonindex limit $page,$pagesize";
+    $sql1 = "select * from amazonlist limit $page,$pagesize";
     $res = $conn->query($sql1);
 
 

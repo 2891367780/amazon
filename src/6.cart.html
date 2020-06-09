@@ -57,7 +57,7 @@
             <div class="cartshowwrap">
               <div class="cartshow">
                 <!-- 第一件商品 -->
-                <ul class="cartshow-list1">
+                <ul class="cartshow-list1" style="display: none;">
                   <li class="cartshow1">
                     <input type="checkbox" />
                   </li>
@@ -66,24 +66,34 @@
                       <img
                         src="https://images-cn.ssl-images-amazon.com/images/I/71mYkM0rTRL._AC_AA100_.jpg"
                         alt=""
+                        class="show2-img"
                       />
                     </a>
-                    <span>
+                    <span class="show2-title">
                       Biotherm 碧欧泉 Force
                       Supreme男士顺滑和焕新肌肤日用洁面乳，4.22盎司/125毫升
                     </span>
                   </li>
                   <li class="cartshow3"></li>
+                  <!-- 单价 -->
                   <li class="cartshow4">
-                    <strong>￥39.00</strong>
+                    <strong>
+                      ￥
+                      <i class="show4-price">39.00</i>
+                    </strong>
                   </li>
+                  <!-- 数量 -->
                   <li class="cartshow5">
                     <a href="">-</a>
-                    <input type="text" value="1" />
+                    <input type="text" value="1" class="show5-num"/>
                     <a href="">+</a>
                   </li>
+                  <!-- 小计 -->
                   <li class="cartshow6">
-                    <strong>￥390.00</strong>
+                    <strong>
+                      ￥
+                      <em class="show6-sum">390.00</em>
+                    </strong>
                   </li>
                   <li class="cartshow7">
                     <a href="">删除</a>
@@ -91,7 +101,7 @@
                 </ul>
 
                 <!-- 第二件商品 -->
-                <ul class="cartshow-list1">
+                <!-- <ul class="cartshow-list1">
                   <li class="cartshow1">
                     <input type="checkbox" />
                   </li>
@@ -122,10 +132,10 @@
                   <li class="cartshow7">
                     <a href="">删除</a>
                   </li>
-                </ul>
+                </ul> -->
 
                 <!-- 第三件商品 -->
-                <ul class="cartshow-list1">
+                <!-- <ul class="cartshow-list1">
                   <li class="cartshow1">
                     <input type="checkbox" />
                   </li>
@@ -156,7 +166,7 @@
                   <li class="cartshow7">
                     <a href="">删除</a>
                   </li>
-                </ul>
+                </ul> -->
               </div>
             </div>
           </div>
@@ -181,7 +191,7 @@
             <span>已选商品</span>
             <em>3</em>
             <span>件</span>
-          </div> 
+          </div>
           <div class="cartfoot-zcount">
             <span>合计(不含运费):</span>
             <strong>0.00</strong>
@@ -193,6 +203,8 @@
       </div>
     </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="thirdplugins/jquery.cookie.js"></script>
+    <script src="script/6.cart.js"></script>
     <script>
       $("#cartheader").load("public/header.html");
     </script>

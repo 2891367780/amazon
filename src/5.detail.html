@@ -122,51 +122,33 @@
             </div>
           </div>
 
+          <!-- ======================================================= -->
           <!-- 详情页 -->
           <div class="detailmain">
             <!-- 详情页左边图片 -->
             <div class="detailmainpic_wrap">
               <!-- 小图和小放 -->
               <div id="spic">
-                <img
-                  src="https://images-cn.ssl-images-amazon.com/images/I/81O4wsv0P9L._AC_SR300,300.jpg"
-                  alt=""
-                  id="smallpic"
-                />
+                <img src="" alt="" id="smallpic" />
                 <div id="sf"></div>
               </div>
 
               <!-- 大图和大放 -->
               <div id="bf">
-                <img
-                  src="https://images-cn.ssl-images-amazon.com/images/I/81O4wsv0P9L._AC_SR300,300.jpg"
-                  alt=""
-                  id="bpic"
-                />
+                <img src="" alt="" id="bpic" />
               </div>
 
               <!--列表小图 -->
               <div id="ulist">
                 <div id="list">
                   <ul>
-                    <li>
+                    <!-- <li>
                       <img
                         src="https://img14.360buyimg.com/n0/jfs/t1/97930/20/9251/822007/5e0ca9a6Ebc107a6a/901ea4294766a519.jpg"
                         alt=""
                       />
                     </li>
-                    <li>
-                      <img
-                        src="https://img14.360buyimg.com/n0/jfs/t1/97930/20/9251/822007/5e0ca9a6Ebc107a6a/901ea4294766a519.jpg"
-                        alt=""
-                      />
-                    </li>
-                    <li>
-                      <img
-                        src="https://img14.360buyimg.com/n0/jfs/t1/97930/20/9251/822007/5e0ca9a6Ebc107a6a/901ea4294766a519.jpg"
-                        alt=""
-                      />
-                    </li>
+                     -->
                   </ul>
                 </div>
               </div>
@@ -174,18 +156,84 @@
 
             <!-- 详情页介绍文字 -->
             <div class="goodsinfo-word">
+              <!-- 1 -->
               <div class="p-name">
                 <a class="loadtitle" href="##"
-                  >高帮男女运动拳击贴肤软鞋沙滩鞋溯溪涉水防滑游泳潜水浮潜漂流鞋</a
+                  >OLAY 玉兰油 视黄醇24晚霜 含视黄醇和维生素B3，40克</a
                 >
               </div>
+
+              <!-- 2 -->
+              <div class="p-share">
+                <span>|</span>
+                <em>分享</em>
+                <a href="">
+                  <i class="p-share1"></i>
+                </a>
+                <a href="">
+                  <i class="p-share2"></i>
+                </a>
+                <a href="">
+                  <i class="p-share3"></i>
+                </a>
+                <a href="">
+                  <i class="p-share4"></i>
+                </a>
+              </div>
+
+              <hr />
+
+              <!-- 3 -->
               <div class="p-price">
+                价格：
                 <strong><em>￥</em><i class="loadpcp">35.84</i></strong>
+                <img src="" alt="" class="buy" />
               </div>
-              <div class="p-btn">
-                <input type="text" id="count" value="1" />
-                <a href="javascript:;">加入购物车</a>
+
+              <!-- 4 -->
+              <div class="p-goodsmessage">
+                <p>
+                  送达日期: 如果在结账时选择海外购加速配送,
+                  预计最快6月23日-6月25日送达
+                </p>
+                <p>
+                  销售配送: 由亚马逊英国从境外直接销售并发货,
+                  受亚马逊海外购使用条件及卢森堡法律约束。了解更多。
+                </p>
+                <h5>退货承诺：</h5>
+                <span>
+                  查看亚马逊英国退换货政策。海外购所有商品由亚马逊中国外官方站销售并发货，因此所有退换货必须寄送到中国以外的亚马逊配送中心。具体操作方法请参考退货退款流程。
+                </span>
+                <ul>
+                  <li>醒来后，肌肤明显更光滑和闪亮</li>
+                  <li>
+                    24
+                    小时水润您的肌肤，细纹和皱纹显著改善，光滑、亮泽、紧致、黑斑和毛孔
+                  </li>
+                  <li>
+                    Olay 视黄醇 24 结合两种*强大的护肤成分：视黄醇复合物和维生素
+                    B3
+                  </li>
+                  <li>旨在将*成分多达 10 层深层渗入皮肤表面</li>
+                  <li>专为皮肤*受损时期设计</li>
+                </ul>
               </div>
+            </div>
+
+            <!-- 加入购物车按钮 -->
+            <div class="p-btn">
+              <label for="">数量:</label>
+              <input type="text" id="count" value="1" />
+              <div class="bn1">
+                <span></span>
+                <a href="javascript:;" class="cartbn">加入购物车</a>
+              </div>
+              <div class="bn1 bn2">
+                <span></span>
+                <a href="http://localhost/amazon/src/6.cart.html">现在购买</a>
+              </div>
+
+              <p>您的交易 安全无忧</p>
             </div>
           </div>
         </div>
@@ -194,6 +242,8 @@
       </div>
     </div>
     <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="thirdplugins/jquery.cookie.js"></script>
+    <script src="script/5.detail.js"></script>
     <script>
       $("#detailheader").load("public/header.html");
     </script>

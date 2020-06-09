@@ -4,7 +4,6 @@
   .detailmainwrap {
     width: 100%;
     height: 800px;
-    background: rgb(168, 201, 238);
     // 详情页内容导航
     .detailmainnav {
       width: 100%;
@@ -27,7 +26,6 @@
               height: 24px;
               width: 24px;
               background: url("https://images-cn.ssl-images-amazon.com/images/G/28/AGS/subnav/SpriteImage_1x._CB485943680_.png");
-
               color: #fff;
               margin: 7px 5px 0 0;
             }
@@ -96,20 +94,19 @@
     // 详情页
     .detailmain {
       position: relative;
+
       .detailmainpic_wrap {
         float: left;
-
-        margin: 50px 70px 0px 150px;
+        margin: 50px 0px 0px 150px;
         // 小图和小放
         #spic {
           width: 400px;
           height: 400px;
-
           float: left;
           position: relative;
           img {
-            width: 500px;
-            height: 500px;
+            width: 400px;
+            height: 400px;
           }
           #sf {
             width: 50px;
@@ -125,20 +122,20 @@
 
         // 大图和大放
         #bf {
-          width: 400px;
-          height: 500px;
+          width: 600px;
+          height: 600px;
           border: 1px solid #000;
           overflow: hidden;
           position: absolute;
-          left: 410px;
+          left: 550px;
           visibility: hidden;
           z-index: 100;
           img {
             position: absolute;
             left: 0px;
             top: 0px;
-            width: 800px;
-            height: 800px;
+            width: 1000px;
+            height: 1000px;
           }
         }
 
@@ -147,9 +144,11 @@
           position: absolute;
           left: 0px;
           top: 50px;
-          width: 402px;
+          width: 80px;
           height: 500px;
           overflow: hidden;
+          overflow-y: scroll;
+
           #list {
             float: left;
             margin-left: 18px;
@@ -162,7 +161,7 @@
               top: 0px;
               li {
                 width: 56px;
-                height: 70px;
+                height: 24px;
                 margin-bottom: 15px;
                 img {
                   width: 52px;
@@ -179,49 +178,163 @@
       .goodsinfo-word {
         overflow: hidden;
         float: left;
-        margin-left: 30px;
+        // 1
         .p-name {
           width: 350px;
           height: 50px;
-          margin-left: 50px;
-          margin-top: 50px;
+          margin: 50px 0 20px 50px;
           .loadtitle {
-            font: 16px "微软雅黑";
-            color: #666666;
+            font-size: 19px;
+            font-weight: 400;
+            color: #111;
           }
         }
-        .p-price {
-          margin-left: 50px;
-          margin-top: 10px;
-          width: 300px;
-          height: 50px;
-          background: rgba(183, 183, 183, 0.4);
-          line-height: 50px;
-        }
-        .p-btn {
-          margin-top: 20px;
-          input {
-            display: inline-block;
-            width: 50px;
-            height: 46px;
-            font-size: 20px;
-            font-family: "微软雅黑";
-            color: black;
-            margin-left: -189px;
-            border: 1px solid gray;
+
+        // 2
+        .p-share {
+          display: flex;
+          margin-left: 60px;
+          span {
+            margin-right: 5px;
+          }
+          em {
+            margin-right: 10px;
           }
           a {
             display: block;
-            width: 100px;
-            height: 50px;
-            background-color: red;
-            font-size: 16px;
-            font-family: "微软雅黑";
-            color: white;
-            line-height: 50px;
+            width: 17px;
+            height: 17px;
+            margin-right: 5px;
+            i {
+              display: block;
+              background-image: url("https://images-cn.ssl-images-amazon.com/images/G/01/AUIClients/AmazonUIIcon-beacon_light_1x-addec3fd9da3908c382725310951d0252d2f72cd._V2_.png");
+              background-repeat: no-repeat;
+              width: 17px;
+              height: 17px;
+
+              margin-top: 2px;
+            }
+            .p-share1 {
+              background-position: -220px -75px;
+            }
+            .p-share2 {
+              background-position: -261px -187px;
+            }
+            .p-share3 {
+              background-position: -262px -130px;
+            }
+            .p-share4 {
+              background-position: -262px -168px;
+            }
+          }
+        }
+
+        hr {
+          height: 1px;
+          width: 600px;
+          border-width: 0;
+          border-top: 1px solid #e7e7e7;
+          background-color: transparent;
+          margin-left: 52px;
+        }
+
+        // 3
+        .p-price {
+          margin: 10px 0 10px 50px;
+          font-size: 13px;
+          color: #555;
+          img {
+            display: block;
+            margin-left: 40px;
+          }
+          strong {
+            font-size: 17px;
+            color: #b12704 !important;
+          }
+        }
+
+        // 4
+        .p-goodsmessage {
+          font-size: 13px;
+          color: 30px;
+          margin-left: 50px;
+          span {
+            display: block;
+            width: 600px;
+            white-space: normal;
+            margin-bottom: 20px;
+          }
+          ul {
+            margin-left: 12px;
+            li {
+              list-style: disc;
+            }
+          }
+        }
+      }
+
+      // 加入购物车按钮
+      .p-btn {
+        width: 237px;
+        height: 266px;
+        margin-top: 50px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        float: right;
+        margin-right: 30px;
+        padding: 15px;
+        a{
+          text-decoration: none!important;
+        }
+        label {
+          font-size: 15px;
+          margin-right: 10px;
+          font-weight: normal;
+        }
+        input {
+          display: inline-block;
+          width: 40px;
+          height: 40px;
+          font-size: 20px;
+          color: black;
+          border: 1px solid gray;
+          text-align: center;
+        }
+        .bn1 {
+          position: relative;
+          a {
+            display: block;
+            width: 207px;
+            height: 28px;
+            background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+            font-size: 13px;
+            color: #111;
             text-align: center;
-            float: left;
-            margin-left: 140px;
+            line-height: 28px;
+            margin-top: 20px;
+            border: 1px solid rgb(36, 36, 36);
+            border-radius: 3px;
+            
+          }
+          span {
+            display: block;
+            height: 25px;
+            width: 25px;
+            background: url("https://images-cn.ssl-images-amazon.com/images/G/01/AUIClients/AmazonUIIcon-sprite_1x-e9434610f810a3a99b3f0e49c1b938c9d76628b8._V2_.png");
+            background-position: -35px -5px;
+            position: absolute;
+            top: 1px;
+            left: 2px;
+          }
+        }
+        .bn2 {
+          margin-bottom: 20px;
+          span {
+            background-position: -35px -59px;
+          }
+          a {
+            background: #ee9c38;
+            border-color: #ca7c1b #be751a #a56616;
           }
         }
       }
