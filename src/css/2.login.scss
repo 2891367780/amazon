@@ -45,7 +45,7 @@
         // 2
         .telinput {
           .username-wrap {
-              margin-bottom: 10px;
+            margin-bottom: 10px;
           }
           margin-bottom: 10px;
           label {
@@ -60,7 +60,7 @@
               sans-serif;
           }
 
-          .username {
+          .user {
             width: 100%;
             margin-right: 0;
             background-color: #fff;
@@ -75,67 +75,67 @@
             outline: 0;
             color: #111;
           }
-        }
 
-        // 3
-        .a-section {
-          margin-bottom: 22px;
-          margin-top: 14px;
-          width: 299px;
-          .a-button-span12 {
-            width: 100%;
-            background: #f0c14b;
-            border-color: #a88734 #9c7e31 #846a29;
-            color: #111;
-            border-radius: 3px;
-            border-color: #adb1b8 #a2a6ac #8d9096;
-            border-style: solid;
-            border-width: 1px;
-            cursor: pointer;
-            display: inline-block;
-            padding: 0;
-            text-align: center;
-            text-decoration: none !important;
-            vertical-align: middle;
-            .a-button-inner {
-              box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
-              background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
-              display: block;
-              position: relative;
-              overflow: hidden;
-              height: 29px;
-              box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
-              border-radius: 2px;
-              .btn {
-                position: absolute;
-                background-color: transparent;
-                color: transparent;
-                border: 0;
-                cursor: pointer;
-                height: 100%;
-                width: 100%;
-                left: 0;
-                top: 0;
-                opacity: 0.01;
-                outline: 0;
-                overflow: visible;
-                z-index: 20;
-              }
-
-              .a-button-text {
-                color: #111;
-                background-color: transparent;
-                border: 0;
+          // 3
+          .a-section {
+            margin-bottom: 22px;
+            margin-top: 14px;
+            width: 299px;
+            .a-button-span12 {
+              width: 100%;
+              background: #f0c14b;
+              border-color: #a88734 #9c7e31 #846a29;
+              color: #111;
+              border-radius: 3px;
+              border-color: #adb1b8 #a2a6ac #8d9096;
+              border-style: solid;
+              border-width: 1px;
+              cursor: pointer;
+              display: inline-block;
+              padding: 0;
+              text-align: center;
+              text-decoration: none !important;
+              vertical-align: middle;
+              .a-button-inner {
+                box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+                background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
                 display: block;
-                font-family: "Hiragino Sans GB", "Microsoft Yahei", Arial,
-                  sans-serif;
-                font-size: 13px;
-                line-height: 29px;
-                margin: 0;
-                outline: 0;
-                padding: 0 10px 0 11px;
-                text-align: center;
-                white-space: nowrap;
+                position: relative;
+                overflow: hidden;
+                height: 29px;
+                box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+                border-radius: 2px;
+                .btn {
+                  position: absolute;
+                  background-color: transparent;
+                  color: transparent;
+                  border: 0;
+                  cursor: pointer;
+                  height: 100%;
+                  width: 100%;
+                  left: 0;
+                  top: 0;
+                  opacity: 0.01;
+                  outline: 0;
+                  overflow: visible;
+                  z-index: 20;
+                }
+
+                .a-button-text {
+                  color: #111;
+                  background-color: transparent;
+                  border: 0;
+                  display: block;
+                  font-family: "Hiragino Sans GB", "Microsoft Yahei", Arial,
+                    sans-serif;
+                  font-size: 13px;
+                  line-height: 29px;
+                  margin: 0;
+                  outline: 0;
+                  padding: 0 10px 0 11px;
+                  text-align: center;
+                  white-space: nowrap;
+                }
               }
             }
           }

@@ -57,7 +57,7 @@
   font-family: "Hiragino Sans GB", "Microsoft Yahei", Arial, sans-serif;
 }
 
-.registrywrap .registry .registrylist .registryinput .telinput .username {
+.registrywrap .registry .registrylist .registryinput .telinput .user {
   width: 100%;
   margin-right: 0;
   background-color: #fff;
@@ -76,19 +76,19 @@
   padding: 10px 0 10px 0;
 }
 
-.registrywrap .registry .registrylist .registryinput .telinput .checkmesg span {
+.registrywrap .registry .registrylist .registryinput .telinput .checkmesg i {
   font-size: 13px;
   font-weight: 400;
   color: #111;
 }
 
-.registrywrap .registry .registrylist .registryinput .a-section {
+.registrywrap .registry .registrylist .registryinput .telinput .a-section {
   margin-bottom: 22px;
   margin-top: 14px;
   width: 299px;
 }
 
-.registrywrap .registry .registrylist .registryinput .a-section .a-button-span12 {
+.registrywrap .registry .registrylist .registryinput .telinput .a-section .a-button-span12 {
   width: 100%;
   background: #f0c14b;
   border-color: #a88734 #9c7e31 #846a29;
@@ -105,7 +105,7 @@
   vertical-align: middle;
 }
 
-.registrywrap .registry .registrylist .registryinput .a-section .a-button-span12 .a-button-inner {
+.registrywrap .registry .registrylist .registryinput .telinput .a-section .a-button-span12 .a-button-inner {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
   background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
   display: block;
@@ -116,7 +116,7 @@
   border-radius: 2px;
 }
 
-.registrywrap .registry .registrylist .registryinput .a-section .a-button-span12 .a-button-inner .btn {
+.registrywrap .registry .registrylist .registryinput .telinput .a-section .a-button-span12 .a-button-inner .btn {
   position: absolute;
   background-color: transparent;
   color: transparent;
@@ -132,7 +132,7 @@
   z-index: 20;
 }
 
-.registrywrap .registry .registrylist .registryinput .a-section .a-button-span12 .a-button-inner .a-button-text {
+.registrywrap .registry .registrylist .registryinput .telinput .a-section .a-button-span12 .a-button-inner .a-button-text {
   color: #111;
   background-color: transparent;
   border: 0;

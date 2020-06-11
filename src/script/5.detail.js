@@ -156,6 +156,6 @@
       arrnum.push($("#count").val());
       $.cookie("cookienum", arrnum, { expires: 10, path: "/" });
     }
-    alert("已经加入购物车");
+    alert("成功添加购物车");
   });
 })(jQuery);

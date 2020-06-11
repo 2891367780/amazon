@@ -22,7 +22,7 @@
           </div>
         </div>
 
-        <!-- 登录 -->
+        <!--=============== 登录 =====================-->
         <div class="loginlist">
           <div class="logininput">
             <!-- 1 -->
@@ -41,11 +41,9 @@
                     type="text"
                     maxlength="128"
                     id="ap_email"
-                    class="username"
+                    class="user username"
                     placeholder="邮箱/账号/已验证的手机"
                   />
-                  <!-- 提示错误信息 -->
-                  <span></span>
                 </p>
 
                 <p>
@@ -56,25 +54,25 @@
                     type="password"
                     maxlength="128"
                     id="ap_email"
-                    class="username"
+                    class="user password"
                     placeholder="密码"
                   />
                 </p>
-                <!-- 提示错误信息 -->
-                <span></span>
-              </form>
-            </div>
 
-            <!-- 3 -->
-            <div class="a-section">
-              <span class="a-button-span12">
-                <span class="a-button-inner">
-                  <input class="btn" type="button" value="登录" />
-                  <span class="a-button-text">
-                    登录
+                <!-- 3 -->
+                <div class="a-section">
+                  <span class="a-button-span12">
+                    <span class="a-button-inner">
+                      <input class="btn" type="button" value="登录" />
+                      <span class="a-button-text">
+                        登录
+                      </span>
+                    </span>
                   </span>
-                </span>
-              </span>
+                </div>
+                <!-- 提示错误信息 -->
+                <span class="btnspan"></span>
+              </form>
             </div>
 
             <!-- 4 -->
@@ -123,7 +121,7 @@
         <span class="a-button-base"
           ><span class="a-button-inner"
             ><a
-              href="https://www.amazon.cn/ap/register?showRememberMe=true&amp;openid.pape.max_auth_age=0&amp;openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;pageId=cnflex&amp;ignoreAuthState=1&amp;openid.return_to=https%3A%2F%2Fwww.amazon.cn%2F%3Fref_%3Dnav_signin&amp;prevRID=RXHSQF1E1EZ2F29TNJBD&amp;openid.assoc_handle=cnflex&amp;openid.mode=checkid_setup&amp;openid.ns.pape=http%3A%2F%2Fspecs.openid.net%2Fextensions%2Fpape%2F1.0&amp;prepopulatedLoginId=&amp;failedSignInCount=0&amp;openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&amp;openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0"
+              href="http://10.31.162.42/amazon/src/3.registry.html"
               class="a-button-text"
             >
               创建您的 Amazon 账户
@@ -146,5 +144,9 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script/sha1.js"></script>
+    <script src="script/2.login.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
 
 .listwrap .list {
   width: 100%;
-  background: #caec86;
+  background: #fff;
   margin: 0 auto;
 }
 
@@ -47,7 +47,7 @@
 
 .listwrap .list .listmainwrap .listmain .listmainleft {
   width: 190px;
-  background: peru;
+  background: #fff;
   padding-left: 10px;
   float: left;
 }

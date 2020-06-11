@@ -57,7 +57,7 @@
   font-family: "Hiragino Sans GB", "Microsoft Yahei", Arial, sans-serif;
 }
 
-.loginwrap .login .loginlist .logininput .telinput .username {
+.loginwrap .login .loginlist .logininput .telinput .user {
   width: 100%;
   margin-right: 0;
   background-color: #fff;
@@ -72,13 +72,13 @@
   color: #111;
 }
 
-.loginwrap .login .loginlist .logininput .a-section {
+.loginwrap .login .loginlist .logininput .telinput .a-section {
   margin-bottom: 22px;
   margin-top: 14px;
   width: 299px;
 }
 
-.loginwrap .login .loginlist .logininput .a-section .a-button-span12 {
+.loginwrap .login .loginlist .logininput .telinput .a-section .a-button-span12 {
   width: 100%;
   background: #f0c14b;
   border-color: #a88734 #9c7e31 #846a29;
@@ -95,7 +95,7 @@
   vertical-align: middle;
 }
 
-.loginwrap .login .loginlist .logininput .a-section .a-button-span12 .a-button-inner {
+.loginwrap .login .loginlist .logininput .telinput .a-section .a-button-span12 .a-button-inner {
   box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
   background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
   display: block;
@@ -106,7 +106,7 @@
   border-radius: 2px;
 }
 
-.loginwrap .login .loginlist .logininput .a-section .a-button-span12 .a-button-inner .btn {
+.loginwrap .login .loginlist .logininput .telinput .a-section .a-button-span12 .a-button-inner .btn {
   position: absolute;
   background-color: transparent;
   color: transparent;
@@ -122,7 +122,7 @@
   z-index: 20;
 }
 
-.loginwrap .login .loginlist .logininput .a-section .a-button-span12 .a-button-inner .a-button-text {
+.loginwrap .login .loginlist .logininput .telinput .a-section .a-button-span12 .a-button-inner .a-button-text {
   color: #111;
   background-color: transparent;
   border: 0;

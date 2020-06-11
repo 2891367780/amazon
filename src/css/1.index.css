@@ -27,6 +27,12 @@ header {
 
 header .nav {
   margin: 0 auto;
+  width: 100%;
+  height: 39px;
+  position: fixed;
+  left: 0;
+  top: 50px;
+  z-index: 5;
 }
 
 header .nav #nav-logo {
@@ -145,7 +151,6 @@ header .nav #nav-ad div {
 #nav-main {
   width: 100%;
   height: 60px;
-  background: #e4e0e0;
   margin: 0 auto;
 }
 
@@ -296,7 +301,6 @@ header .nav #nav-ad div {
   width: 100%;
   height: 311px;
   margin: 0 auto;
-  background: blueviolet;
 }
 
 .bannerwrap .menuwrap .menu {
@@ -381,6 +385,10 @@ header .nav #nav-ad div {
 
 .bannerwrap .menuwrap .banner {
   float: left;
+}
+
+.bannerwrap .menuwrap .banner .lunboactive {
+  background-color: orange;
 }
 
 .bannerwrap .menuwrap .banner .lunbo {
@@ -773,9 +781,69 @@ section .mainleft5-list img {
 
 .bottom {
   width: 100%;
+  margin: auto;
+  margin-left: 300px;
 }
 
-.bottom img {
-  width: 100%;
-  height: 300px;
+#loutinav {
+  width: 100px;
+  position: fixed;
+  top: 700px;
+  right: 20px;
+}
+
+#loutinav li {
+  width: 100px;
+  height: 50px;
+  border-bottom: 1px dotted #dddddd;
+  list-style: none;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  padding: 10px 0;
+  background: #fff;
+  border-radius: 7px;
+}
+
+#loutinav li span {
+  width: 100px;
+  height: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#loutinav li .loutispan1 {
+  color: #e92d37;
+}
+
+#loutinav li .loutispan2 {
+  color: #5339e7;
+}
+
+#loutinav li .loutispan3 {
+  color: #6ce480;
+}
+
+#loutinav li .loutispan4 {
+  color: #ccec14;
+}
+
+#loutinav .last {
+  background: #5e4a4a;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+#loutinav .active {
+  background: #ec782a;
+  font-weight: 700;
+  display: block;
+}
+
+#loutinav #loutinav ul li:hover span {
+  background: #c00;
+  display: block;
 }

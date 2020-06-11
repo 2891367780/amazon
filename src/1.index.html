@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/1.index.css" />
-    <link rel="stylesheet" href="public/header.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -73,7 +73,7 @@
 
             <!-- 点击显示的列表页 -->
             <div class="menulist">
-              <div class="item"><a href="http://localhost/amazon/src/4.list.html">精华</a></div>
+              <div class="item"><a href="http://10.31.162.42/amazon/src/4.list.html">精华</a></div>
               <div class="item">Kindle电子书</div>
               <div class="item">服装</div>
               <div class="item">Kindle电子书阅读器</div>
@@ -126,7 +126,7 @@
                 <li>
                   <a href="">
                     <img
-                      src="https://images-cn.ssl-images-amazon.com/images/G/28/xywang/2020/WK15/1500_300_sun._CB435658123_.jpg"
+                      src="https://images-cn.ssl-images-amazon.com/images/G/28/AGS/alexis/brand/1500X300/wy_20181113_AGS_PC1500x300_newera._CB479847247_.jpg"
                       alt=""
                     />
                   </a>
@@ -135,26 +135,27 @@
 
               <!-- 轮播图浮出框 -->
               <ol>
+                
                 <li class="active">
-                  <a>
+                  <a href="javascript:;">
                     <span>地表最强防晒爆款合集</span>
                     <span>59元起</span>
                   </a>
                 </li>
                 <li>
-                  <a>
+                  <a href="javascript:;">
                     <span>Kindle</span>
                     <span>您的移动图书馆</span>
                   </a>
                 </li>
                 <li>
-                  <a>
+                  <a href="javascript:;">
                     <span>地表最强防晒爆款合集</span>
                     <span>59元起</span>
                   </a>
                 </li>
                 <li>
-                  <a>
+                  <a href="javascript:;"> 
                     <span>Kindle</span>
                     <span>您的移动图书馆</span>
                   </a>
@@ -261,7 +262,7 @@
 
           <!------------- 左边第二块 ----------------------->
           <!-- ============================================================================ -->
-          <div class="mainleft2">
+          <div class="mainleft2 louti">
             <div class="mainleft2-title">
               <span>镇店之宝</span>
               <a href="">查看所有</a>
@@ -291,7 +292,7 @@
 
           <!------------- 左边第三块 ----------------------->
           <!-- ============================================================================ -->
-          <div class="mainleft2 mainleft3">
+          <div class="mainleft2 mainleft3 louti">
             <div class="mainleft2-title">
               <span>进口好物</span>
             </div>
@@ -315,7 +316,7 @@
           <!-- ============================================================================ -->
 
           <!------------- 左边第四块 ----------------------->
-          <div class="mainleft2 mainleft3">
+          <div class="mainleft2 mainleft3 louti">
             <div class="mainleft2-title">
               <span>为您推荐</span>
             </div>
@@ -340,7 +341,7 @@
 
 
           <!------------- 左边第五块 ----------------------->
-          <div class="mainleft2">
+          <div class="mainleft2 louti">
             <div class="mainleft2-title">
               <span>品牌精选</span>
             </div>
@@ -465,6 +466,17 @@
         <img src="img/foot.png" alt="">
       </div>
 
+
+      <!-- 楼梯效果 -->
+      <div id="loutinav">
+        <ul>
+          <li class="active"><span class="loutispan1">镇店之宝</span></li>
+          <li><span class="loutispan2">进口好物</span ></li>
+          <li><span class="loutispan3">为您推荐</span ></li>
+          <li><span class="loutispan4"> 品牌精选</span ></li>
+          <li class="last">顶部</li>
+        </ul>
+      </div>
       
     </div>
 
@@ -476,6 +488,31 @@
     <script>
       $("#indexheader").load("public/header.html",function(){
         // 头部效果写这里
+        /* 
+        1.如果滚动条距离大于一个值的时候,用动画animate让头部显示出来,也就是将top值设为0
+        否则,就将top值设为负
+
+        2.stop(true):清空队列,立即停止动画
+        因为jQuery中,动画效果每触发都会排在任务队列中,然后按顺序执行,所以基本上都要加上这个
+        */
+      const $header = $(".nav");
+      const $wrap=$('header')
+      $(window).on("scroll", function () {
+        //测试:将滚动条距离显示在title上
+        // $("title").html($(window).scrollTop());
+        $scrolltop = $(window).scrollTop();
+        
+        if ($scrolltop > 500) {
+          $header.stop(true).animate({
+            top: 0,
+          });
+         
+        } else {
+          $header.stop(true).animate({
+            top: 50, //只要比头部高度大就行
+          });
+        }
+      });
       });
     </script>
   </body>

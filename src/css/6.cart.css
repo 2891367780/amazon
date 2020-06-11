@@ -70,6 +70,10 @@
   border-bottom: none;
 }
 
+.cartwrap .cart .cartmainwrap .cartmainleft .cartshowwrap a {
+  text-decoration: none !important;
+}
+
 .cartwrap .cart .cartmainwrap .cartmainleft .cartshowwrap .cartshow {
   padding-top: 20px;
 }
@@ -131,10 +135,8 @@
   color: #b12704;
   font-size: 17px;
   font-weight: 700;
-}
-
-.cartwrap .cart .cartmainwrap .cartmainleft .cartshowwrap .cartshow ul .cartshow7 {
-  margin-left: 195px;
+  width: 277px;
+  padding-left: 15px;
 }
 
 .cartwrap .cart .cartmainwrap .cartmainleft .cartshowwrap .cartshow ul .cartshow7 a {
@@ -154,24 +156,40 @@
   display: flex;
 }
 
+.cartwrap .cart .cartfoot .carttop-checkbox {
+  width: 80px;
+}
+
 .cartwrap .cart .cartfoot .carttop-checkbox input {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .cartwrap .cart .cartfoot .cartfoot-del {
-  margin: 0 30px 0 30px;
+  width: 110px;
 }
 
 .cartwrap .cart .cartfoot .cartfoot-share {
-  margin: 0 423px 0 30px;
+  width: 307px;
 }
 
 .cartwrap .cart .cartfoot .cartfoot-zcount {
-  margin: 0 90px 0 58px;
+  width: 100px;
+}
+
+.cartwrap .cart .cartfoot .cartfoot-remove {
+  width: 100px;
+}
+
+.cartwrap .cart .cartfoot .cartfoot-goodscount {
+  width: 130px;
+}
+
+.cartwrap .cart .cartfoot .cartfoot-zcount {
+  width: 300px;
 }
 
 .cartwrap .cart .cartfoot .cartfoot-js a {
-  text-decoration: none;
+  text-decoration: none !important;
   display: block;
   width: 119px;
   height: 50px;
@@ -181,4 +199,5 @@
   line-height: 50px;
   text-align: center;
   font-size: 22px;
+  margin-left: 23px;
 }

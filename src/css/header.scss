@@ -1,0 +1,315 @@
+// 头部广告页-----------------------------------
+$adheight: 40px;
+.wrapbox {
+  overflow-x: hidden;
+}
+
+.topad {
+  background: #ffd744;
+  width: 100%;
+  min-height: $adheight;
+  max-height: $adheight + 20;
+  a {
+    line-height: $adheight;
+    p {
+      width: 1029px;
+      height: $adheight;
+      background: url("https://images-cn.ssl-images-amazon.com/images/G/28/bag/GS/Event/2020Summer/XCM_Manual_820_30._CB431691850_.jpg")
+        no-repeat center center;
+      margin-left: 168px;
+    }
+  }
+}
+
+//头部搜索logo页-----------------------------------
+header {
+  width: 100%;
+  height: 39px;
+  margin: 0 auto;
+  .nav {
+    margin: 0 auto;
+    width: 100%;
+    height: 39px;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    z-index: 5;
+    // logo
+    #nav-logo {
+      padding-left: 32px;
+      width: 120px;
+      float: left;
+      margin-right: 72px;
+      .nav-logo-link {
+        .nav-sprite {
+          display: block;
+          width: 86px;
+          height: 37px;
+          background: url("https://images-cn.ssl-images-amazon.com/images/G/28/gno/sprites/global-sprite-32-v1._CB485972286_.png");
+          background-repeat: no-repeat;
+          background-position: -10px -120px;
+        }
+      }
+      .nav-logo-prime {
+        position: absolute;
+        top: 38px;
+        left: 79px;
+        font-size: 11px;
+        line-height: 11px;
+        font-family: inherit;
+        white-space: nowrap;
+        color: #48a3c6;
+        text-decoration: underline;
+        font-weight: 700;
+      }
+    }
+
+    // 搜索
+    #nav-search {
+      //搜索外盒子
+      width: 762px;
+      height: 35px;
+      float: left;
+      display: flex;
+
+      //搜索左边
+      .nav-search-left {
+        button {
+          width: 81px;
+          height: 35px;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px;
+          border-top-right-radius: 0px;
+          border-bottom-right-radius: 0px;
+          border-top-color: #bdbdbd;
+          background: #fdfbfb;
+          em {
+            font-family: inherit;
+            font-size: 12px;
+            color: #666;
+          }
+        }
+        .btn:hover {
+          background: #ebe8e8;
+        }
+
+        ul {
+          height: 300px;
+          overflow: hidden;
+          overflow-y: scroll;
+        }
+      }
+
+      //搜索中间
+      .nav-search-center {
+        input {
+          width: 823px;
+          height: 35px;
+          border-top: 1px solid #bdbdbd;
+          border-bottom: 1px solid #cdcdcd;
+          text-indent: 8px;
+          font-size: 18px;
+        }
+      }
+
+      //搜索右边
+      .nav-search-right {
+        position: relative;
+        border: 1px solid;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        cursor: pointer;
+
+        input {
+          width: 41px;
+          height: 33px;
+          background: rgb(110, 109, 109);
+          border-color: #485059 #2c3137 #363c43 #485059;
+          border-top-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px;
+        }
+        span {
+          display: block;
+          position: absolute;
+          left: 12px;
+          top: 7px;
+          width: 21px;
+          height: 21px;
+          background: url("https://images-cn.ssl-images-amazon.com/images/G/28/gno/sprites/global-sprite-32-v1._CB485972286_.png");
+          background-repeat: no-repeat;
+          background-position: -40px -290px;
+        }
+      }
+    }
+
+    //右边广告
+    #nav-ad {
+      div {
+        background-image: url(https://images-cn.ssl-images-amazon.com/images/G/28/event2020/37039._CB430081241_.jpg);
+        width: 370px;
+        height: 39px;
+        float: right;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+//主体内容-------------------------------------------------
+#nav-main {
+  width: 100%;
+  height: 60px;
+  // background: #e4e0e0;
+  margin: 0 auto;
+  //导航左边内容
+  .nav-main-left {
+    height: 55px;
+    float: left;
+    #nav-shop {
+      padding: 6px 12px 0 15px;
+      text-decoration: none;
+      margin-top: 2px;
+      width: 192px;
+      line-height: 37px;
+      height: 44px;
+
+      .nav-line-1 {
+        font-size: 12px;
+        line-height: 14px;
+        height: 14px;
+        font-weight: 400;
+        margin-top: 9px;
+        padding: 0 12px 0 13px;
+        font-family: inherit;
+        color: #000;
+      }
+
+      .nav-line-2 {
+        display: block;
+        font-size: 14px;
+        line-height: 0px;
+        font-weight: 700;
+        padding-bottom: 5px;
+        padding: 0 12px 0 13px;
+        font-family: inherit;
+        color: #000;
+      }
+    }
+  }
+
+  //导航中间
+  .nav-main-center {
+    height: 55px;
+    width: 949px;
+    float: left;
+    .nav-xshop-container {
+      padding-top: 34px;
+      a {
+        padding: 0 9px;
+        font-family: inherit;
+        font-size: 13px;
+        color: #05a;
+        text-decoration: none;
+      }
+      a:hover {
+        color: rgb(231, 91, 40);
+      }
+    }
+  }
+
+  //导航右边登陆注册
+  .nav-main-right {
+    float: left;
+    height: 55px;
+    width: 368px;
+    a {
+      text-decoration: none;
+    }
+    .nav-tools {
+      padding: 6px 7px 0 40px;
+
+      //登陆账号
+      .nav1-tools {
+        padding-left: 9px;
+        .nav-a-1 {
+          display: block;
+          margin-top: 9px;
+          line-height: 15px;
+          float: left;
+          .main-line-1 {
+            font-size: 12px;
+            color: #000;
+            display: block;
+          }
+          .main-line-2 {
+            font-size: 14px;
+            font-weight: 700;
+            color: #000;
+            display: block;
+          }
+        }
+      }
+
+      //免费试享
+      .nav2-tools {
+        .nav-a-2 {
+          float: left;
+          margin-top: 9px;
+          line-height: 15px;
+          margin: 9px 20px 0 20px;
+          .main-line1-1 {
+            font-size: 12px;
+            color: #000;
+            display: block;
+          }
+          .main-line1-2 {
+            font-size: 14px;
+            color: #000;
+            display: block;
+            font-weight: 700;
+          }
+        }
+      }
+
+      //加入购物车
+      .nav3-tools {
+        .nav-a-3 {
+          float: left;
+          .main-line2-1 {
+            display: block;
+            width: 38px;
+            height: 26px;
+            margin-top: 9px;
+            background-image: url(https://images-cn.ssl-images-amazon.com/images/G/28/gno/sprites/global-sprite-32-v1._CB485972286_.png);
+            background-position: -10px -340px;
+            float: left;
+          }
+          .main-line2-2 {
+            font-size: 14px;
+            font-weight: 700;
+            font-family: inherit;
+            color: #000;
+            float: left;
+            margin: 19px 0 0 4px;
+          }
+        }
+      }
+
+      //心愿单
+      .nav4-tools {
+        .nav-a-4 {
+          display: inline-block;
+          font-family: inherit;
+          color: #000;
+          font-size: 14px;
+          font-weight: 700;
+          margin: 19px 0 0 25px;
+        }
+      }
+    }
+  }
+}

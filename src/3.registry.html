@@ -30,9 +30,9 @@
               创建账户
             </h1>
 
-            <!-- 2 -->
+            <!-------------------------------- 2 ---------------------------------------->
             <div class="telinput">
-              <form action="">
+              <form action="http://10.31.162.42/amazon/php/3.registry.php" method="POST">
                 <p class="username-wrap">
                   <label for="ap_email">
                     您的姓名:
@@ -41,11 +41,12 @@
                     type="text"
                     maxlength="128"
                     id="ap_email"
-                    class="username"
-                    placeholder="6-10字母、数字或符号"
+                    class="username user"
+                    placeholder="1-14位字母、数字"
+                    name="username"
                   />
                   <!-- 提示错误信息 -->
-                  <span></span>
+                  <span class="userspan"></span>
                 </p>
 
                 <p class="username-wrap">
@@ -56,11 +57,12 @@
                     type="password"
                     maxlength="128"
                     id="ap_email"
-                    class="username"
-                    placeholder="6-20位字母、数字或符号"
+                    class="user password"
+                    placeholder="8-14位字母、数字或符号"
+                    name="password"
                   />
                   <!-- 提示错误信息 -->
-                  <span></span>
+                  <span class="passspan"></span>
                 </p>
 
                 <p class="username-wrap">
@@ -71,11 +73,12 @@
                     type="password"
                     maxlength="128"
                     id="ap_email"
-                    class="username"
-                    placeholder="6-20位字母、数字或符号"
+                    class="user repass"
+                    placeholder="8-14位字母、数字或符号"
+                    name="repass"
                   />
                   <!-- 提示错误信息 -->
-                  <span></span>
+                  <span class="repassspan"></span>
                 </p>
 
                 <p class="username-wrap">
@@ -86,31 +89,33 @@
                     type="email"
                     maxlength="128"
                     id="ap_email"
-                    class="username"
+                    class="user email"
                     placeholder="请输入正确的邮箱"
+                    name="email"
                   />
                   <!-- 提示错误信息 -->
-                  <span></span>
+                  <span class="emailspan"></span>
                 </p>
-              </form>
 
-              <!-- 复选框 -->
-              <p class="checkmesg">
-                <input type="checkbox" />
-                <span>我已阅读并同意网站的使用条件及隐私声明。</span>
-              </p>
-            </div>
+                <!-- 复选框 -->
+                <p class="checkmesg">
+                  <input type="checkbox" class="checkbox-mess"/>
+                  <i>我已阅读并同意网站的使用条件及隐私声明。</i>
+                  <span class="checkspan"></span>
+                </p>
 
-            <!-- 3 -->
-            <div class="a-section">
-              <span class="a-button-span12">
-                <span class="a-button-inner">
-                  <input class="btn" type="submit" value="立即注册" />
-                  <span class="a-button-text">
-                    立即注册
+                <!-- 3 -->
+                <div class="a-section">
+                  <span class="a-button-span12">
+                    <span class="a-button-inner">
+                      <input class="btn" type="submit" value="立即注册" name="submit"/>
+                      <span class="a-button-text">
+                        立即注册
+                      </span>
+                    </span>
                   </span>
-                </span>
-              </span>
+                </div>
+              </form>
             </div>
 
             <!-- 5 -->
@@ -159,5 +164,8 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script/3.registry.js"></script>
   </body>
 </html>
