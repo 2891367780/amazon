@@ -131,7 +131,7 @@
 
     //点击导航栏li,跳到对应的内容--求出对应内容的top值,然后将对应内容的top值赋给滚动条高度
     //$(this).index():点击内容对于的索引值
-    let $h = $contents.eq($(this).index()).offset().top; //对应内容的top值
+    let $h = $contents.eq($(this).index()).offset().top-50; //对应内容的top值
     //$("html,body"):让整个html的滚动条top变化,兼容写法 (针对整个html和body的)
     $("html,body")
       .stop(true)
